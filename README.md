@@ -33,8 +33,8 @@ Acceptance Criteria:
 
 <img width="881" alt="Screen Shot 2020-06-14 at 9 19 24 PM" src="https://user-images.githubusercontent.com/14985358/84620131-f9a13400-ae8b-11ea-9369-070b5abbe8c2.png">
 
-5. When all the answers are answered or the times reaches zero, the games indicates that the game is over    and display the total points. 
-A message indicates that is over and you can submit your initials for highscore list.
+5. When all the questions are answered or the times reaches zero, the game indicates that the quiz is over and display the total points. 
+A box indicates to input your initials and can submit to reflect the score to the hihgscore list.
 
 <img width="784" alt="Screen Shot 2020-06-14 at 9 18 22 PM" src="https://user-images.githubusercontent.com/14985358/84620373-ac719200-ae8c-11ea-86d2-c4f44db2185f.png">
 
