@@ -1,3 +1,7 @@
+/* This is a game that plays a Coding Quiz Challenge
+Written my Marlon Guandique*/
+
+
 const startButton = document.getElementById('start-btn')
 const nextButton = document.getElementById('next-btn')
 const questionContainerElement = document.getElementById('question-container')
@@ -5,14 +9,8 @@ const questionElement = document.getElementById('question')
 const answerButtonsElement = document.getElementById('answer-buttons')
 
 
-/*var count = 60, timer = setInterval(function() {
-    $("#counter").html(count--);
-    if(count == 1) clearInterval(timer);
-}, 1000);*/
-
-var timer = 60; 
-
-
+/* We give only 60 seconds for the quiz to last */
+var timer = 60;
 
 let shuffledQuestions, currentQuestionIndex
 
@@ -22,21 +20,26 @@ nextButton.addEventListener('click', () => {
   setNextQuestion()
 })
 
+/* This is when the game starts */
 function startGame() {
   startButton.classList.add('hide')
   shuffledQuestions = questions.sort(() => Math.random() - .5)
   currentQuestionIndex = 0
   questionContainerElement.classList.remove('hide')
 
-  setInterval(function() {
+  var intervals = setInterval(function () {
     //console.log(timer);
     document.getElementById('time').textContent = timer;
-    timer--;
+    if (timer < 1) {
+      gameover()
+      clearInterval(intervals)
+    }
+    timer = timer - 1;
   }, 1000)
-
   setNextQuestion()
 }
 
+/* Function to keep track of the next question &  points manipulation*/
 function setNextQuestion() {
   resetState()
   showQuestion(shuffledQuestions[currentQuestionIndex])
@@ -55,6 +58,7 @@ function showQuestion(question) {
     answerButtonsElement.appendChild(button)
   })
 }
+
 
 function resetState() {
   clearStatusClass(document.body)
@@ -94,6 +98,12 @@ function clearStatusClass(element) {
   element.classList.remove('wrong')
 }
 
+
+function gameover() {
+  document.getElementById('end-screen').setAttribute("class", "");
+}
+
+/*  Array that holds questions and answer for the game */
 const questions = [
   {
     question: 'Commonly used data types DO Not include:',

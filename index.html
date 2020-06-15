@@ -6,14 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="./assets/css/styles.css" rel="stylesheet">
-    <script defer src="./assets/js/script.js"></script>
+  
     <title>Coding Quiz Challenge</title>
 </head>
 
-
-
 <body>
-
     <div class="container">
         <div class="scores">
             <link rel="stylesheet" href="./highscores.html">View Highscores</href>
@@ -24,22 +21,25 @@
         <div id="question-container" class="hide">
             <div id="question">Question</div>
             <div id="answer-buttons" class="btn-grid">
-                <button class="boton">answer 1</button>
-                <button class="boton">answer 2</button>
-                <button class="boton">answer 3</button>
-                <button class="boton">answer 4</button>
+                <button class="btn">answer 1</button>
+                <button class="btn">answer 2</button>
+                <button class="btn">answer 3</button>
+                <button class="btn">answer 4</button>
             </div>
         </div>
 
+        <!--We control the flow of the game>!-->
         <div class="controls">
             <h1>Coding Quiz Challenge</h1>
             <p>Try to answer the following code-related questions within the time limit.
                 Keep in mine that incorrect answers will penalize your score/time by 10 seconds!</p>
-            <button id="start-btn" class="start-btn boton">Click to Start</button>
-            <button id="next-btn" class="next-btn boton hide">Next</button>
+            <button id="start-btn" class="start-btn btn">Click to Start</button>
+            <button id="next-btn" class="next-btn btn hide">Next</button>
         </div>
+
+        <!--End of the game  >!-->
         <div id="end-screen" class="hide">
-            <h2>Done!!!</h2>
+            <h2>Game Over</h2>
             <p>
                 Your final score is <span id="final-score"></span>.
             </p>
@@ -51,67 +51,9 @@
     </div>
 
 
-    
-
-</body>
-
-</html>
-
-
-<!--
-
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coding Quiz</title>
-
-    <link rel="stylesheet" href="./assets/css/styles.css" />
-   
-
-</head>
-
-
-<body>
-    <div class="scores">
-        <href="highscore.html">View Highscores</href>
-    </div>
-
-    <div class="timer"> Time: <span id="time">0</span>
-    </div>
-
-    <div class="wrapper">
-        <div id="start-screen" class="start">
-            <h1>Coding Quiz Challenge</h1>
-            <p>
-                Try to answer the following code-related questions within the time limit.
-                Keep in mine that incorrect answers will penalize your score/time by 10 seconds!
-            </p>
-            <button id="start">"Let's start the Quiz</button>
-        </div>
-    </div>
-    <div id="questions" class="hide">
-        <h2 id="question-title"> </h2>
-        <div id="choices" class="choices">
-        </div>
-    </div>
-
-    <div id="end-screen" class="hide">
-        <h2>Done!!!</h2>
-        <p>
-            Your final score is <span id="final-score"></span>.
-        </p>
-        <p>
-            Enter your Initials: <input type="text" id="initials" max="3" />
-            <button id="submit"> Submit </button>
-        </p>
-
-    </div>
-
     <script src="./assets/js/script.js"></script>
+
 </body>
 
-
 </html>
+

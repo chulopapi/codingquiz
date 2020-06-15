@@ -1,6 +1,6 @@
 *, *::before, *::after {
     box-sizing: border-box;
-    font-family: Gotham Rounded;
+    font-family: Arial, Helvetica, sans-serif;
   }
   
   :root {
@@ -9,10 +9,10 @@
     --hue-correct: 145;
   }
   
-/*.scores {
+.scores {
     margin-top: left;
 
-}*/
+}
 
   body {
     --hue: var(--hue-neutral);
@@ -23,7 +23,6 @@
     height: 100vh;
     justify-content: center;
     align-items: center;
-    /* background-color: hsl(var(--hue), 100%, 20%); */
   }
   
   body.correct {
@@ -32,7 +31,6 @@
   
   body.wrong {
     background-color: hsl(var(--hue-wrong), 100%, 50%);
-    /*--hue: var(--hue-wrong);*/
   }
   
   .container {
@@ -53,10 +51,7 @@
     margin: 20px 0;
   }
   
-  .boton {
-    /* --hue: var(--hue-neutral); */
-    /* border: 1px solid hsl(var(--hue), 100%, 30%); */
-    /* background-color: hsl(var(--hue), 100%, 50%); */
+  .btn {
     background-color: darkslateblue;
     border-radius: 10px;
     padding: 5px 10px;
@@ -96,9 +91,10 @@
   }
 
   .end-screen {
-    margin-bottom: 100px;
-    text-align: center;
     padding: 180px;
+    text-align: center;
+    margin-bottom: 100px;
+    
   }
 
 
