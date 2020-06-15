@@ -98,7 +98,6 @@ function clearStatusClass(element) {
   element.classList.remove('wrong')
 }
 
-
 function gameover() {
   document.getElementById('end-screen').setAttribute("class", "");
 }
@@ -133,12 +132,12 @@ const questions = [
     ]
   },
   {
-    question: 'String values must be enclosed with in ______ when being assigned to variables.',
+    question: 'A very useful tool during development and debugging for printing content to the dubugger.',
     answers: [
-      { text: '1. COMMAS', correct: false },
-      { text: '2. CURLY AND BRACKETS', correct: true },
-      { text: '3. QUOTES', correct: false },
-      { text: '4. PARENTHESIS', correct: false }
+      { text: '1. JAVASCRIPT', correct: false },
+      { text: '2. TERMINAL/BASH', correct: false},
+      { text: '3. FOR LOOPS', correct: false },
+      { text: '4. CONSOLE.LOG', correct: true }
     ]
   }
 ]
